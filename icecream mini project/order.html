@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Order Form</title>
+<style>
+body
+{
+background-image:url("pink icecream.avif");
+background-repeat:no repeat;
+background-attachment:fixed;
+background-size:cover;
+}
+</style>
+ </head>
+<body>
+    <h2>Ice Cream Order Form</h2>
+    <form action="submit_order.php" method="post">
+        <label for="customer_name">Customer Name:</label><br>
+        <input type="text" id="customer_name" name="customer_name" required><br><br>
+        
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="text" id="phone_number" name="phone_number" required><br><br>
+        
+        <label for="pickup_date">Pickup Date:</label><br>
+        <input type="date" id="pickup_date" name="pickup_date" required><br><br>
+        
+        <label for="pickup_time">Pickup Time:</label><br>
+        <input type="time" id="pickup_time" name="pickup_time" required><br><br>
+        
+        <label for="flavor">Flavor:</label><br>
+        <select id="flavor" name="flavor">
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+        
+        <label for="size">Size:</label><br>
+        <input type="radio" id="small" name="size" value="Small (1 scoop)" required>
+        <label for="small">Small (1 scoop)</label><br>
+        <input type="radio" id="medium" name="size" value="Medium (2 scoops)">
+        <label for="medium">Medium (2 scoops)</label><br>
+        <input type="radio" id="large" name="size" value="Large (3 scoops)">
+        <label for="large">Large (3 scoops)</label><br>
+        <!-- Add more sizes as needed -->
+        
+        <label for="toppings">Toppings:</label><br>
+        <input type="checkbox" id="chocolate_syrup" name="toppings[]" value="Chocolate Syrup">
+        <label for="chocolate_syrup">Chocolate Syrup</label><br>
+        <input type="checkbox" id="caramel_syrup" name="toppings[]" value="Caramel Syrup">
+        <label for="caramel_syrup">Caramel Syrup</label><br>
+        <!-- Add more toppings as needed -->
+        
+        <label for="waffle_cone">Waffle Cone/Cup:</label><br>
+        <input type="radio" id="waffle_cone" name="waffle_cone" value="Waffle Cone" required>
+        <label for="waffle_cone">Waffle Cone</label><br>
+        <input type="radio" id="waffle_cup" name="waffle_cone" value="Waffle Cup">
+        <label for="waffle_cup">Waffle Cup</label><br><br>
+        
+        <label for="additional_notes">Additional Requests/Notes:</label><br>
+        <textarea id="additional_notes" name="additional_notes" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="payment_method">Payment Method:</label><br>
+        <select id="payment_method" name="payment_method">
+            <option value="Cash">Cash</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Online Payment">Online Payment</option>
+        </select><br><br>
+        
+	<a href="ordersuccessfully.html"> Order Successfully</a>
+      <a href="payment.html">Payment For Order</a>	
+    </form>
+</body>
+<mark>
+
+</mark>
+</html>
